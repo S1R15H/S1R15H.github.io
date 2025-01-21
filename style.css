@@ -1,12 +1,103 @@
+* {box-sizing: border-box;}
+
 body {
+    height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     scroll-behavior: smooth; 
-    background-color: red;
 }
 
 .nav-bar {
-    font-family: DM Sans;
-    background-color: rgb(137, 145, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(250, 237, 159);
     overflow: hidden;
+    padding: 0;
 }
+
+.nav-bar a{
+    float: left;
+    color: rgb(150, 110, 1);
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.4s ease;
+}
+
+.nav-bar a:active{color: white;}
+.nav-bar a:hover{color: rgb(255, 187, 0);}
+
+#welcome {
+    background-image: url("Images/IMG_3205.jpg");
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#welcome h1{text-align: right; padding-right: 60px;}
+
+#skills {
+    position: relative;
+    height: 100vh;
+    background-image: url("Images/pexels-apollonia-363024912-29279566.jpg"); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 187, 0, 0.5);
+    z-index: 1;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+#skillbars{
+    width: 100%;
+    text-align: left;
+    padding: 0 10% 0 10%;
+}
+
+.containers{
+    display: flex; 
+    gap: 30px; 
+    align-items: center;
+    padding: 20px 20px 0 0;
+    color: rgb(250, 237, 159);
+    font-size: 15px;
+}
+
+.skill {
+    width: 100%;
+    text-align: right;
+    padding: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.first {width: 50%;background-color:rgb(255, 162, 0);}
+.second {width: 70%;background-color:rgb(255, 162, 0)}
+.third {width: 100%;background-color:rgb(255, 162, 0)}
+
