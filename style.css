@@ -116,12 +116,13 @@ body {
     text-align: right;
     padding: auto;
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 162, 0);
 }
 
-.first {width: 50%;background-color:rgb(255, 162, 0);}
-.second {width: 70%;background-color:rgb(255, 162, 0)}
-.third {width: 100%;background-color:rgb(255, 162, 0)}
+.first {width: 50%;background-color:rgb(255, 162, 0);border-radius: 10px}
+.second {width: 70%;background-color:rgb(255, 162, 0);border-radius: 10px}
+.third {width: 100%;background-color:rgb(255, 162, 0);border-radius: 10px}
 
 #portfolio {
     height: 90vh;
