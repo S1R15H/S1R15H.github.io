@@ -259,23 +259,65 @@ body {
     color: white;
 }
 
-
-#last-page {
-    position: relative;
-    height: 50vh;
-    background-image: url("Images/pexels-luis-gomes-166706-546819.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#contact {
     display: flex;
+    position: relative;
+    height: 150vh;
+    padding: 50px 50px;
+    background: linear-gradient(to bottom,rgb(237, 230, 169),rgb(255, 162, 0)); 
 }
 
-#last-page:before {
-    content: '';
+#contact h1 {font-size: 45px;color:rgb(255, 162, 0)}
+#my-form h2 {font-size: 20px; padding: 0;margin: 0;}
+
+#my-form {
     position: absolute;
-    height: 100%;
+    left: 30vw;
+    top: 90px;
+    width: 55vw;
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#my-form input, textarea{
+    border: 2px solid;
+    border-radius: 5px; 
     width: 100%;
-    background-color: rgba(255, 187, 0, 0.5);
-    z-index: 1;
+    background-color: rgb(237, 230, 169);
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#my-form-button {
+    background-color: rgb(255, 162, 0);
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+#my-form-button:hover {
+    background-color: rgb(230, 146, 0);
+}
+
+.icons {
+    display: flex;
+    color: white;
+    align-items: top;
+    justify-content: left;
+}
+
+.icons i{
+    font-size: 50px;
+}
+
+.icons p{
+   font-size: 20px;
+   padding-left: 20px;
 }

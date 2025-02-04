@@ -8,6 +8,8 @@
         <link href='https://fonts.googleapis.com/css?family=Bowlby One SC' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
         <link rel="stylesheet" href="media.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f6f24d8299.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="nav-bar">
@@ -80,7 +82,20 @@
         </section>
         <section id="contact">
             <h1>Contact</h1>
+            <form id="my-form" action="https://formspree.io/f/xjkgrjdv" method="POST">
+                <h2>Feel free to drop me a message -  would love to hear from you</h2>
+                <input type="text" name="name" placeholder="Name"/>
+                <input type="email" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message" style="height: 200px"></textarea>
+                <button id="my-form-button">Send</button>
+                <p id="my-form-status"></p>
+                <div class="icons">
+                    <i class="material-icons">mail</i> 
+                    <p>sgurung7218@floridapoly.edu</p>
+                </div>
+              </form>
         </section>
         <footer>something</footer>
     </body>
+    <script src="script.js"></script>
 </html>
