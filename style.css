@@ -1,4 +1,7 @@
 * {box-sizing: border-box;}
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     height: 100%;
@@ -262,18 +265,18 @@ body {
 #contact {
     display: flex;
     position: relative;
-    height: 150vh;
-    padding: 50px 50px;
+    height: 125vh;
+    padding: 100px 10vw;
     background: linear-gradient(to bottom,rgb(237, 230, 169),rgb(255, 162, 0)); 
 }
 
-#contact h1 {font-size: 45px;color:rgb(255, 162, 0)}
+#contact h1 {font-size: 50px;color:rgb(255, 162, 0);text-align: center}
 #my-form h2 {font-size: 20px; padding: 0;margin: 0;}
 
 #my-form {
     position: absolute;
     left: 30vw;
-    top: 90px;
+    top: 150px;
     width: 55vw;
     display: flex;
     align-items: right;
@@ -306,18 +309,11 @@ body {
     background-color: rgb(230, 146, 0);
 }
 
-.icons {
-    display: flex;
+#my-form-status{
+    font-size: 20px;
     color: white;
-    align-items: top;
-    justify-content: left;
 }
 
-.icons i{
-    font-size: 50px;
-}
-
-.icons p{
-   font-size: 20px;
-   padding-left: 20px;
+footer {
+    background-color: rgb(250, 237, 159);
 }
